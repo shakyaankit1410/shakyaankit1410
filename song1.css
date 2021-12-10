@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    list-style-type: none;
+    height: 65px;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    display: flex;
+}
+.logo{
+    width: 56px;
+    padding: 0 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.closebutton{
+    height: 38px;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 35px;
+    cursor: pointer;
+    padding: 0 8px;   
+}
+.brand1{
+    display: flex;
+    font-weight: bolder;
+    font-size: 6rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+}
+.container{
+    color: white;
+    min-height: 68vh;
+    background-color: black;
+    margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+}
+
+
+.songList img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.playedsong{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 68vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+.poster{
+    height: 58vh;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    display: flex;
+}
+.poster1{
+    height: 500px;
+    justify-content: center;
+    width: 500px;
+    border-radius: 50%;
+    animation: spin 40s linear infinite;
+}
+
+.songInfo{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.songItem:hover{
+    width: 300px; 
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color:aqua;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
